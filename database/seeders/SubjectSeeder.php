@@ -13,5 +13,12 @@ class SubjectSeeder extends Seeder
     public function run(): void
     {
         Subject::factory(100)->create();
+        Subject::create([
+            'title' => 'desain web',
+            'semester' => 'semester 3',
+            'academic_year'=>'2022',
+            'sks'=>'8',
+            'description'=>'matapelajaran yang membahsas tentang web',
+        ]);
     }
 }
